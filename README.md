@@ -57,11 +57,9 @@ runs fine on this Mac. Other Macs will show an "Apple could not verify…" warni
 `docs/` is a static launch page (`index.html`, images and the DMG, which `build.sh` copies in). To publish it on
 GitHub Pages:
 
-1. Create a public repository on GitHub, e.g. `trick-or-treat`, and push this folder to it.
-2. In the repository, open **Settings › Pages**, set **Source** to *Deploy from a branch*, then pick `main` and
-   `/docs` and save. The site appears at `https://YOUR-USERNAME.github.io/trick-or-treat/` within a minute or two.
-3. For image previews when the link is shared on Twitter/X, change the `og:image` line in `docs/index.html` to
-   the full address of `social-card.png`.
+It's live at https://angelwalia312.github.io/trickortreatyourdesktop/, served by GitHub Pages from the `/docs`
+folder on `main`. Pushing a new `docs/` (for example after `./build.sh` refreshes the DMG) updates the site within a
+minute or two.
 
 To preview locally: `python3 -m http.server 8642 --directory docs`, then open http://localhost:8642.
 
