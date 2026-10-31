@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trick or Treat: Halloween costumes for your Mac's Desktop</title>
+<meta name="description" content="Right-click any file or folder on your Mac's Desktop and it gets a surprise Halloween costume. Free for macOS.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trick or Treat 🎃">
+<meta property="og:description" content="Right-click anything on your Mac's Desktop. It gets a surprise Halloween costume.">
+<!-- For image previews on Twitter/X, change this to the full address once the site is live,
+     e.g. https://YOUR-USERNAME.github.io/trick-or-treat/social-card.png -->
+<meta property="og:image" content="social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --bg-top: #1d1033;
+    --bg-bottom: #08040f;
+    --text: #f4eefc;
+    --muted: #b9a9d4;
+    --orange: #ff8f29;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg-bottom); }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    font: 17px/1.55 ui-rounded, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background:
+      radial-gradient(700px 420px at 88% -8%, rgba(255, 214, 120, 0.2), transparent 60%),
+      linear-gradient(var(--bg-top), var(--bg-bottom) 900px);
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 64px 16px 80px; }
+  b { color: #fff; }
+
+  .hero { text-align: center; }
+  .hero .icon { width: 128px; height: 128px; filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.5)); }
+  h1 { font-size: clamp(44px, 10vw, 76px); line-height: 1; letter-spacing: -0.02em; font-weight: 900; margin: 18px 0 10px; }
+  .tagline { font-size: clamp(20px, 4vw, 26px); font-weight: 700; color: var(--orange); margin: 0 0 14px; }
+  .lede { max-width: 560px; margin: 0 auto 30px; color: var(--muted); }
+  .download {
+    display: inline-block;
+    padding: 16px 34px;
+    border-radius: 999px;
+    background: var(--orange);
+    color: #1d0d00;
+    font-size: 19px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(255, 143, 41, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .download:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(255, 143, 41, 0.45); }
+  .download:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+  .meta { font-size: 14px; color: var(--muted); margin: 14px 0 0; }
+
+  section { margin-top: 88px; }
+  h2 { text-align: center; font-size: clamp(26px, 5vw, 34px); line-height: 1.2; margin: 0 0 28px; }
+
+  .demo { margin-top: 56px; }
+  .demo img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+  }
+
+  .how-row { display: flex; align-items: center; gap: 40px; }
+  .how-row img { width: 300px; max-width: 100%; flex: none; filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.55)); }
+  ol { margin: 0; padding-left: 1.4em; }
+  li::marker { color: var(--orange); font-weight: 800; }
+  ol li { margin-bottom: 14px; color: var(--muted); }
+  .install ol { max-width: 620px; margin: 0 auto; }
+
+  .collect { text-align: center; }
+  .mystery { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; max-width: 560px; margin: 0 auto; }
+  .mystery span {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    background: #2e1d4d;
+    border: 2px solid #5a3f86;
+    color: var(--orange);
+    font-size: clamp(26px, 6vw, 38px);
+    font-weight: 900;
+  }
+  .collect p { margin: 22px 0 0; color: var(--muted); font-weight: 600; }
+
+
+  @media (max-width: 640px) {
+    main { padding-top: 40px; }
+    .how-row { flex-direction: column; gap: 28px; }
+    .mystery { grid-template-columns: repeat(4, 1fr); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img class="icon" src="icon.png" width="128" height="128" alt="Trick or Treat app icon: a jack-o'-lantern folder under a full moon">
+    <h1>Trick or Treat</h1>
+    <p class="tagline">Dress up your Mac's Desktop for Halloween.</p>
+    <p class="lede">Right-click any file or folder and choose <b>🎃 Trick or Treat</b>. It gets a surprise costume, with a spooky sound to match.</p>
+    <a class="download" href="TrickOrTreat.dmg" download>Download for Mac</a>
+    <p class="meta">Free · macOS 13 Ventura or later · Apple silicon &amp; Intel · 1.7 MB</p>
+  </header>
+
+  <section class="demo">
+    <img src="tutorial.gif" width="720" height="450" alt="Tutorial: right-click a folder on the Desktop, choose Trick or Treat, the folder gets a witch costume, then choose Undecorate to put it back">
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="how-row">
+      <img src="reveal-card.png" width="300" height="329" alt="Pop-up card announcing “Homework” is now a Witch">
+      <ol>
+        <li><b>Right-click</b> any file or folder on your Desktop and choose <b>🎃 Trick or Treat</b>.</li>
+        <li>It gets a random costume. Files keep their preview underneath, so a screenshot stays a screenshot, just wearing a witch hat.</li>
+        <li>Halloween over? Right-click it and choose <b>🧹 Undecorate</b>, or pick <b>🧹 Undecorate Desktop</b> to clear everything at once. It all goes back exactly how it was.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="install">
+    <h2>Install</h2>
+    <ol>
+      <li>Open the DMG and drag <b>Trick or Treat</b> into Applications.</li>
+      <li>Open the app. If macOS says it can't verify it, click <b>Done</b>, go to <b>System Settings › Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b>. You only do this once.</li>
+      <li>In the window that opens, click <b>Open Settings</b> and switch on the <b>Trick or Treat</b> Finder extension.</li>
+      <li>Right-click something on your Desktop. Happy Halloween!</li>
+    </ol>
+  </section>
+
+  <section class="collect">
+    <h2>12 costumes to collect</h2>
+    <div class="mystery" role="img" aria-label="12 mystery costumes, all still hidden">
+      <span>?</span><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span>
+      <span>?</span><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span>
+    </div>
+    <p>Every pull is a surprise. Which will you get?</p>
+  </section>
+</main>
+</body>
+</html>
