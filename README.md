@@ -63,6 +63,8 @@ minute or two.
 
 To preview locally: `python3 -m http.server 8642 --directory docs`, then open http://localhost:8642.
 
+The launch videos and images come from `Tools/video/main.swift` (see the header comment there for the commands).
+
 `docs/tutorial.gif` is drawn by `Tools/tutorial/main.swift` using the app's real costume art and reveal card:
 
 ```bash
